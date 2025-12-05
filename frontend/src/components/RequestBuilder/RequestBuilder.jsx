@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import MethodSelector from './MethodSelector';
 import URLInput from './URLInput';
 import SendButton from './SendButton';

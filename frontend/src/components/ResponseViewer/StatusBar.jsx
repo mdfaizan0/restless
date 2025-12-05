@@ -1,5 +1,3 @@
-import React from 'react';
-
 const StatusBar = ({ status, duration, size }) => {
     const getStatusColor = (s) => {
         if (s >= 200 && s < 300) return 'text-success';

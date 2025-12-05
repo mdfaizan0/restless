@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 /**
  * Modal for renaming a collection
@@ -7,11 +7,10 @@ const RenameCollectionModal = ({ isOpen, collection, onClose, onSubmit }) => {
     const [name, setName] = useState('');
     const [error, setError] = useState('');
 
-    useEffect(() => {
-        if (collection) {
-            setName(collection.name);
-        }
-    }, [collection]);
+    // Reset state when modal opens with new collection
+    if (isOpen && collection && name !== collection.name) {
+        setName(collection.name);
+    }
 
     const handleSubmit = async (e) => {
         e.preventDefault();

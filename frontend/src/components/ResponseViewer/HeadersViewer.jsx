@@ -1,5 +1,3 @@
-import React from 'react';
-
 const HeadersViewer = ({ headers }) => {
     if (!headers) return <div style={{ padding: '10px', color: 'var(--text-secondary)' }}>No headers</div>;
 

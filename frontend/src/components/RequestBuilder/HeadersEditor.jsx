@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const authTypes = [
     { label: 'No Auth', value: 'none' },

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import CollectionsList from './CollectionsList';
 import HistoryList from './HistoryList';
@@ -47,7 +47,7 @@ const Sidebar = ({ onHistoryClick, onCollectionItemClick }) => {
         <div className="h-full flex flex-col">
             <div className="p-4 font-bold text-lg border-b border-border flex items-center gap-2.5 text-accent">
                 <div className="flex items-center gap-2.5">
-                    <img src="./assets/icons8-lightning-bolt-48.png" alt="restless" width="24" height="24" />
+                    <img src="https://img.icons8.com/?size=100&id=LGuzFFJr1J9a&format=png&color=000000" alt="restless" width="24" height="24" />
                     <span>Restless</span>
                 </div>
             </div>

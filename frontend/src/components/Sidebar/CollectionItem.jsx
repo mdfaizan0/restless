@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 /**
@@ -144,7 +144,7 @@ const CollectionItem = ({ collection, items, onLoadItems, onItemClick, onRename,
                                     >
                                         {/* Method Badge */}
                                         <span
-                                            className="font-bold text-[10px] min-w-[40px] text-center px-1 py-0.5 rounded"
+                                            className="font-bold text-[10px] min-w-10 text-center px-1 py-0.5 rounded"
                                             style={{
                                                 color: getMethodColor(item.method),
                                                 backgroundColor: `${getMethodColor(item.method)}15`

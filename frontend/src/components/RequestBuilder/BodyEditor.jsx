@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useCallback } from 'react';
+import { useState, useMemo, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import CodeMirror from '@uiw/react-codemirror';
 import { json } from '@codemirror/lang-json';
