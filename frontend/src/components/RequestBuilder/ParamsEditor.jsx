@@ -1,3 +1,6 @@
+import React from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+
 const ParamsEditor = ({ params, setParams }) => {
     const handleAddParam = () => {
         setParams([
