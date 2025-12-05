@@ -8,7 +8,7 @@ A modern, feature-rich API testing tool built with React and Node.js, designed t
 
 ## Live Demo
 
-Demo available here - [Link](https://restless.vercel.app)
+Demo available here - [Link](https://restless-ten.vercel.app/)
 
 ## Features
 
