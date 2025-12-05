@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --color-bg: #1c1c1c;
+    --color-surface: #151515;
+    --color-surface-2: #101010;
+    --color-surface-3: #1a1a1a;
+
+    --color-border: #1f1f1f;
+    --color-border-hover: #2a2a2a;
+
+    --color-accent: #10b981;
+    --color-accent-hover: #059669;
+    --color-accent-dim: rgba(16, 185, 129, 0.1);
+    --color-error-dim: rgba(239, 68, 68, 0.1);
+
+    --color-text-primary: #ffffff;
+    --color-text-secondary: #a1a1a1;
+    --color-text-tertiary: #6b6b6b;
+    --color-text-muted: #404040;
+
+    --color-success: #10b981;
+    --color-error: #ef4444;
+    --color-warning: #f59e0b;
+    --color-info: #3b82f6;
+
+    --color-method-get: #10b981;
+    --color-method-post: #f59e0b;
+    --color-method-put: #3b82f6;
+    --color-method-patch: #8b5cf6;
+    --color-method-delete: #ef4444;
+    --color-method-head: #6b7280;
+    --color-method-options: #6b7280;
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+/* Expose variables for CodeMirror and other JS usage */
+:root {
+    --bg: var(--color-bg);
+    --surface: var(--color-surface);
+    --surface-2: var(--color-surface-2);
+    --surface-3: var(--color-surface-3);
+    --border: var(--color-border);
+    --accent: var(--color-accent);
+    --accent-dim: var(--color-accent-dim);
+    --error-dim: var(--color-error-dim);
+    --text-primary: var(--color-text-primary);
+    --text-secondary: var(--color-text-secondary);
+    --font-mono: var(--font-mono);
+
+    /* CodeMirror specific */
+    --cm-line-height: 1.55;
+    --cm-font-size: 13px;
+    --cm-padding: 12px;
+}
+
+body {
+    @apply bg-bg text-text-primary font-sans overflow-hidden h-screen;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    @apply w-2 h-2;
+}
+
+::-webkit-scrollbar-track {
+    @apply bg-bg;
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-text-secondary/50 rounded;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    @apply bg-text-primary;
+}
+
+/* Utilities */
+.flex-center {
+    @apply flex items-center justify-center;
+}
+
+/* CodeMirror Overrides */
+.cm-editor {
+    transition: none !important;
+}
+
+.cm-scroller {
+    background: var(--color-surface) !important;
+}
+
+.cm-content {
+    padding: 0 !important;
+}
+
+.cm-gutters {
+    border-right: 1px solid var(--color-border) !important;
+}
+
+.cm-selectionBackground {
+    background: var(--color-accent-dim) !important;
+}
+
+.cm-activeLine {
+    background: var(--color-surface-3) !important;
+}
